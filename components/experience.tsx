@@ -47,6 +47,8 @@ export default function Experience() {
             >
               <div className="flex gap-4 items-center mb-5 flex-wrap">
 
+              <a href={item.link} target="_blank">
+
                <Image
                   src={item.img}
                   alt=""
@@ -55,8 +57,9 @@ export default function Experience() {
                   height={150}
                   className="bg-white p-2 "
                 />
+              </a>
                 <div>
-                <h3 className="font-semibold capitalize">{item.name}</h3>
+                <h3 className="font-semibold capitalize"><a href={item.link} target="_blank">{item.name}</a></h3>
                 <p className="font-normal !m-0 !text-sm text-gray-700 dark:text-white/50">{item.location}</p>
                 </div>
               </div>

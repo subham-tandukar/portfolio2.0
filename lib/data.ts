@@ -57,6 +57,7 @@ export const experiencesData = [
     date: "Oct 2021 - Dec 2021",
     img:aptech,
     name:"Aptech",
+    link:"https://www.aptechlalitpur.com/"
   },
   {
     title: "React Web Developer",
@@ -66,7 +67,8 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "April 2022 - June 2023",
     img:easy,
-    name:"Easy Software"
+    name:"Easy Software",
+    link:"https://easysoftware.com.np/"
   },
   {
     title: "Frontend Web Developer",
@@ -77,6 +79,7 @@ export const experiencesData = [
     date: "July 2023 - present",
     img:genesis,
     name:"Genesis Web Technology",
+    link:"https://www.genesiswtech.com/"
   },
 ] as const;
 

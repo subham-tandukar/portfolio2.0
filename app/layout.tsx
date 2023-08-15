@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+        <Head>
+        {/* Meta tags for URL preview */}
+        <meta property="og:title" content="My Portfolio" />
+        <meta property="og:description" content="To know about me, you can go through my portfolio." />
+        <meta property="og:image" content="./public/url.png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:url" content="https://portfolio-subham-tandukar.vercel.app/" />
+        <meta property="og:type" content="website" />
+        {/* Add more meta tags as needed for image, URL, etc. */}
+      </Head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
